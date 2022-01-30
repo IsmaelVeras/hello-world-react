@@ -1,11 +1,18 @@
+import Card from './components/Card';
 import './App.css';
 
 function App() {
+  
+  var titulo = "Camisa Básica Pollo"
+
   return (
     <div className="App">
-      <header className="App-header">
-          <p>Hello World</p>
-      </header>
+        <Card 
+          title={titulo}
+          description="Cor: Laranja" 
+          price="R$ 25,40"
+          promotion={true}
+        />
     </div>
   );
 }
